@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_4"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <com.tust.tools.service.Marrquee
+        android:id="@+id/tq_gg_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:autoLink="web|phone"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="@string/dialog_about"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <EditText
+            android:id="@+id/tq_chengshi_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bw_new_et_bg_1"
+            android:hint="@string/tq_chengshi"
+            android:visibility="visible" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/tq_mian_serch_ib"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/tq_chengshi_et"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/find"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tq_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tianqi_main_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/tq_dangqian_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tq_dangqian_city_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/tq_dangqian"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/tq_dangqian_pic_iv"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/bw_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="25dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tq_dangqian_condition_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#330000" />
+
+                <TextView
+                    android:id="@+id/tq_dangqian_wendu_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#330000" />
+
+                <TextView
+                    android:id="@+id/tq_dangqian_fengsu_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#330000" />
+
+                <TextView
+                    android:id="@+id/tq_dangqian_gengxintime_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#330000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/tq_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:divider="@null"
+                android:cacheColorHint="#00000000" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
