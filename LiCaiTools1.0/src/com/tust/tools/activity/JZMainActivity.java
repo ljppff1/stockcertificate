@@ -245,7 +245,8 @@ public class JZMainActivity extends Activity implements OnClickListener {
                 menu.setImageResource(R.drawable.jz_main_more);
                 return false;
             } else {
-            	exitDialog();
+            	//exitDialog();
+            	finish();
             }
             break;
         case KeyEvent.KEYCODE_MENU:

@@ -213,7 +213,8 @@ public class TQMainActivity extends Activity implements OnClickListener{
     public boolean onKeyDown(int kCode, KeyEvent kEvent) {
         switch (kCode) {
         case KeyEvent.KEYCODE_BACK: {
-                exitDialog();
+               // exitDialog();
+        	finish();
             return false;
         }
         }

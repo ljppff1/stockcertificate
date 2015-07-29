@@ -97,8 +97,9 @@ public class FYMainActivity extends Activity implements OnClickListener{
     public boolean onKeyDown(int kCode, KeyEvent kEvent) {
         switch (kCode) {
         case KeyEvent.KEYCODE_BACK: {
-                exitDialog();
-            return false;
+            //    exitDialog();
+        	finish();
+            return true;
         }
         }
         return super.onKeyDown(kCode, kEvent);

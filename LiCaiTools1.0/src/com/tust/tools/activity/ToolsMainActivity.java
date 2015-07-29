@@ -371,7 +371,7 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
                     Intent intent = new Intent(ToolsMainActivity.this, c);
                     intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                     ToolsMainActivity.this.startActivity(intent);
-                    ToolsMainActivity.this.finish();
+                   
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -392,7 +392,7 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
         builder.setPositiveButton(confrimStr, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                ToolsMainActivity.this.finish();    
+                   
                 System.exit(0);
             }
         });

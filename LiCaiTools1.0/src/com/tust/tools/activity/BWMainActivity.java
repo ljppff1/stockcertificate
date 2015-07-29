@@ -153,7 +153,8 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 				adapter.isShowCheck = false;
 				adapter.notifyDataSetChanged();
 			} else {
-				exitDialog("exit");
+			//	exitDialog("exit");
+				finish();
 			}
 			return false;
 		}
